@@ -1,0 +1,21 @@
+.work {
+  padding-top: 5vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+  color: #666666;
+}
+
+.behancelogo {
+  padding: 20px; 
+  width: 20vw;
+}
+
+@media (max-width:600px) {
+  .behancelogo {
+    padding: 20px; 
+    width: 70vw;
+  }
+}

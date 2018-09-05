@@ -1,31 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Cutive');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-/* navbar */
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0px;
-  font-family: 'Cutive', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nav {
-  height: 50px;
+  height: 12vh;
   width: 100%;
   background-color: #111e40;
   position: relative;
   display: flex;
+  justify-content: center;
 }
 
 .nav > .nav-header {
   display: inline;
 }
 
-/* navbar */
 
 .header {
-  height: 40vh;
+  height: 25vh;
+  padding-top: 5vh;
   background-color: #111e40;
   display: flex;
   justify-content: center;
@@ -35,10 +35,6 @@ body {
   max-height: 10vh;
   align-self: center;
 }
-
-
-
-
 
 .nav > .nav-btn {
   display: none;
@@ -53,11 +49,11 @@ body {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: #efefef;
+  color: #43547e;
 }
 
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+.nav > .nav-links > a:hover, .active {
+  color: white;
 }
 
 .nav > #nav-check {
@@ -65,15 +61,23 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
 @media (max-width:600px) {
+  .header {
+    background-color: #111e40;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header > img {
+    max-width: 85vw;
+    align-self: center;
+    /* header */
+  }
+
+  .nav{
+    height: 9vh;
+  }
+
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -86,9 +90,7 @@ body {
     height: 50px;
     padding: 13px;
   }
-  .nav > .nav-btn > label:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+  
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
@@ -109,6 +111,7 @@ body {
   .nav > .nav-links > a {
     display: block;
     width: 100%;
+    color: white;
   }
   .nav > #nav-check:not(:checked) + .nav-links {
     height: 0px;
@@ -117,4 +120,30 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+}
+
+.footer {
+  background-color: #111e40;
+  padding: 20px;
+  height: 10vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+.socialmedia{
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialmedia > a { 
+  color:  #43547e;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.socialmedia > a:hover { 
+  color:  white;
 }
